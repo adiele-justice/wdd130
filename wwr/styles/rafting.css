@@ -1,44 +1,29 @@
+/* rafting.css */
+
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
-
-/* Define CSS variables for color scheme */
+/* Define CSS variables based on your color scheme */
 :root {
   --primary-color: #3498db;
   --secondary-color: #2ecc71;
   --text-color: #333;
 }
 
-/* General styles */
-body {
-  font-family: 'Caveat', cursive;
+/* Apply styles to headings and paragraph elements */
+h1, h2{
+  font-family: 'Berkshire Swash', cursive;
   color: var(--text-color);
-  margin-left: 10%;
-  margin-right: 10%;
-  padding: 0;
+}
+p {
+  font-family: 'caveat', cursive;
 }
 
-/* Header styles */
-header {
-  padding: 10px;
-}
-
-header img {
-  max-width: 100%;
-  height: auto;
-}
-
-nav {
-  margin-top: 10px;
-}
-
-nav a {
-  color: black;
+/* Style social media links */
+nav.sociallinks a {
   text-decoration: none;
-  margin: 0 5px;
 }
 
-/* Main styles */
-  /* text-align: center; */
+/* Style hero container */
 .hero {
   position: relative;
 }
@@ -54,46 +39,144 @@ nav a {
   top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: skyblue;
   font-size: 3em;
+  color: var(--primary-color);
 }
 
-article {
+.hero article {
   position: absolute;
-  top: 50%;
-  left: 30%;
-  background-color: rgba(255, 255, 255, 0.8);
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8); 
   padding: 20px;
   text-align: center;
-  margin-right: 20%;
 }
 
-article img {
+.hero article img {
   float: right;
-  margin: 0 0 10px 20px;
-  max-width: 190px;
+  max-width: 200px; 
+  margin: 0 0 20px 20px;
 }
 
-/* Section styles */
-section {
-  margin: 20px 0;
+/* Style footer */
+footer {
+  text-align: center;
 }
 
+footer p {
+  font-size: 0.8em;
+  color: white;
+}
+
+nav a:hover{
+  color: var(--text-color);
+}
+
+/* Main Content styles */
+main {
+  padding: 20px;
+}
+
+/* History Section styles */
+
+.history-section{
+  margin-top: 30px;
+}
+.history-section h2{
+  font-family:'Berkshire Swash', cursive;
+  font-size: xx-large;
+  font-weight: 900;
+}
+
+.history-two{
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.history{
+  text-align: justify;
+}  
+/* Adventures Section styles */
+
+.flex{
+  display: flex;
+}
+
+.adventure-section h2{
+  font-family: 'Berkshire Swash', serif;
+  font-size: xx-large;
+}
 h2 {
-  color: var(--secondary-color);
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+figure {
+  text-align: center;
+  margin-bottom: 20px;
+  
+}
+
+img {
+  max-width: 100%;
+  /* height: auto; */
+}
+
+figcaption {
+  margin-top: 10px;
+  font-style: italic;
+  color: var(--text-color);
 }
 
 /* Footer styles */
 footer {
-  padding: 0;
-  color: white;
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: right;
 }
-footer p{
-    color: black;
+
+.sociallinks {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.sociallinks a {
+  margin-left: 10px;
 }
 
 .sociallinks img {
-  width: 30px;
-  height: 30px;
-  margin: auto;
+  max-width: 30px; /* Adjust as needed */
+}
+
+
+/* Header styles using CSS Grid */
+header {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px 0;
+  display: grid;
+  grid-template-columns: 15% auto; /* Added grid-template-columns property */
+  align-items: center; /* Center align items vertically */
+}
+
+header img {
+  max-width: 100px;
+  padding-left: 90%;
+}
+
+header nav {
+  display: flex;
+  margin-bottom: 10px;
+  padding-left: 30%;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 15px;
+  font-weight: bold;
 }
