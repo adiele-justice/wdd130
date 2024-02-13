@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us - Rafting Company</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="styles/rafting.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="./images/logo.png" alt="Rafting Company Logo"> 
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="trips.html">Trips</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+   <section class="Company info">
+    <h1>Company Information:</h1>
+    <p>Address: 231 Green Lake, Seatle</p>
+    <p>Phone: +311 (766) 435-2137</p>
+    <p>Email: blueseainfo@gmail.com</p>
+    <!-- Embedded Google Map -->
+    <div class="google map">
+      <!-- Embedded Google Map here -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28921.365295890668!2d-122.35465528477117!3d47.67867974402296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490102c93e83355%3A0x102565466944d59a!2sSeattle%2C%20WA%2C%20USA!5e0!3m2!1sen!2sng!4v1707846388134!5m2!1sen!2sng" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+   </section>
+
+   <!-- Employee Profiles -->
+   <section class="employee-profile">
+    <h2>Here's Our Team</h2>
+    <!-- Add employee profile and captions -->
+    <figure>
+      <img src="images/employee 1.jpg" alt="Employee 1" height="250px" width="250px">
+      <figcaption>Finn Jackson - CEO</figcaption>
+    </figure>
+    <figure>
+      <img src="images/employee 2.webp" alt="Employee 2" height="250px" width="250px">
+      <figcaption>Sarah Wilson - Manager</figcaption>
+    </figure>
+    <figure>
+      <img src="images/employee 3.jpg" alt="Employee 3" width="250px" height="250px">
+      <figcaption>Jim Gordon - Customer Support</figcaption>
+    </figure>
+   </section>
+
+   <!-- Contact form -->
+   <section class="contact-form">
+    <h2>Contact Us</h2>
+    <form action="#" method="post">
+      <label for="name"><span>1.</span>What's your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email"><span>2.</span>Your Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="purpose"><span>3.</span>What's the Purpose of your Message:</label>
+      <select name="purpose" id="purpose" required>
+        <option value="Choose one" selected disabled>Choose One ...</option>
+        <option value="General">General Inquiry</option>
+        <option value="Reservation">Reservation Question</option>
+        <option value="Suggestion">Website Suggestion</option>
+      </select>
+
+      <label for="message">Your Message:</label>
+      <textarea name="message" id="message" required></textarea>
+
+      <label for="subscribe">
+        <input type="checkbox" id="subscribe" name="subscribe">
+        Please subscribe me to the monthly newsletter
+      </label>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2024 ✨BLUE SEA RAFTING ✨ Adiele Justice Iheanyi✨</p>
+  <nav class="sociallinks">
+    <a href="https://facebook.com">
+      <img src="./images/facebook.png" alt="Facebook">
+    </a>
+    <a href="https://twitter.com">
+      <img src="./images/twitter.png" alt="Twitter">
+    </a>
+    <a href="https://instagram.com">
+        <img src="./images/instagram.png" alt="Instagram">
+      </a>
+    </nav>
+  </footer>
+</body>
+</html>

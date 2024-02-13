@@ -180,3 +180,59 @@ header nav a {
   margin: 0 15px;
   font-weight: bold;
 }
+
+
+/*Apply styles to headings and paragragh elements here*/
+h1,h2,p {
+  font-family: 'ital', sans-serif;
+  color: var(--text-color);
+}
+/*Main content styles*/
+.main-content {
+  padding: 20px;
+}
+
+.contact-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.contact-form h2 {
+  color: #0e4b7f;
+}
+.contact-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+.contact-form label {
+  margin-bottom: 5px;
+  color: #333;
+}
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+.contact-form button {
+  background-color: steelblue ;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.contact-form button:hover {
+  background-color: gray;
+}
+.home {
+  display: flex;
+}
+
