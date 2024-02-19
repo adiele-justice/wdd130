@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact us - Rafting Company</title>
-    <meta name="description" content="">
+    <title>Contact us - Blue Sea Rafting Company</title>
+    <meta name="description" content="it contains all about how to contact our company">
+    <meta name="author" content="Adiele Justice Iheanyi">
     <link rel="stylesheet" href="styles/rafting.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,24 +34,24 @@
     <!-- Embedded Google Map -->
     <div class="google map">
       <!-- Embedded Google Map here -->
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28921.365295890668!2d-122.35465528477117!3d47.67867974402296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490102c93e83355%3A0x102565466944d59a!2sSeattle%2C%20WA%2C%20USA!5e0!3m2!1sen!2sng!4v1707846388134!5m2!1sen!2sng" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28921.365295890668!2d-122.35465528477117!3d47.67867974402296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490102c93e83355%3A0x102565466944d59a!2sSeattle%2C%20WA%2C%20USA!5e0!3m2!1sen!2sng!4v1707846388134!5m2!1sen!2sng" width="400" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
    </section>
 
    <!-- Employee Profiles -->
-   <section class="employee-profile">
     <h2>Here's Our Team</h2>
+    <section class="employee-profile"> 
     <!-- Add employee profile and captions -->
     <figure>
-      <img src="images/employee 1.jpg" alt="Employee 1">
+      <img src="images/employee1.jpg" alt="Employee 1">
       <figcaption>Finn Jackson - CEO</figcaption>
     </figure>
     <figure>
-      <img src="images/employee 2.webp" alt="Employee 2" height="250px" width="250px">
+      <img src="images/employee2.webp" alt="Employee 2">
       <figcaption>Sarah Wilson - Manager</figcaption>
     </figure>
     <figure>
-      <img src="images/employee 3.jpg" alt="Employee 3" width="250px">
+      <img src="images/employee3.jpg" alt="Employee 3">
       <figcaption>Jim Gordon - Customer Support</figcaption>
     </figure>
    </section>
@@ -58,29 +59,47 @@
    <!-- Contact form -->
    <section class="contact-form">
     <h2>Contact Us</h2>
-    <form action="#" method="post">
-      <label for="name"><span>1.</span>What's your Name:</label>
-      <input type="text" id="name" name="name" required>
+    <!--form action="#" method="post"-->
+    <form>
+      <fieldset>
+          <label for="name">What's your Name:</label>
+          <input type="text" id="name" name="name" required>
+      
+          <!--label for="email"><span>2.</span>Your Email:</label>
+          <input type="radio" id="email" name="email"-->
 
-      <label for="email"><span>2.</span>Your Email:</label>
-      <input type="email" id="email" name="email" required>
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required>
 
-      <label for="purpose"><span>3.</span>What's the Purpose of your Message:</label>
-      <select name="purpose" id="purpose" required>
-        <option value="Choose one" selected disabled>Choose One ...</option>
-        <option value="General">General Inquiry</option>
-        <option value="Reservation">Reservation Question</option>
-        <option value="Suggestion">Website Suggestion</option>
-      </select>
+          <!--label for="radio">Gender:</label>
+          <input type="radio" name="gender" value="male">Male
+          <input type="radio" name="gender" value="female"-->
 
-      <label for="message">Your Message:</label>
-      <textarea name="message" id="message" required></textarea>
+          <label for="purpose">What's the Purpose of your Message:</label>
+          <input type="radio" name="purpose">General Inquiry
+          <input type="radio" name="purpose">Reservation Question
+          <input type="radio" name="purpose">Website Suggestion
+          <br>
+          <br>
+          <!--select name="purpose" id="purpose" required>
+            <option value="Choose one" selected disabled>Choose One ...</option>
+            <option value="General">General Inquiry</option>
+            <option value="Reservation">Reservation Question</option>
+            <option value="Suggestion">Website Suggestion</option>
+          </select-->
 
-      <label for="subscribe">
-        <input type="checkbox" id="subscribe" name="subscribe">
-        Please subscribe me to the monthly newsletter
+          <label for="message">Your Message:</label>
+          <textarea name="message" id="message" required></textarea>
+
+          <label for="subscribe">
+          <input type="checkbox" id="subscribe" name="subscribe">
+          Please subscribe me to the monthly newsletter
+          </label>
+          
+      </fieldset>
+      <label for="submission button">
+      <button type="submit">Submit</button>
       </label>
-      <button type="submit">Send Message</button>
     </form>
   </section>
 </main>

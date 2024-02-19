@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 /* Define CSS variables based on your color scheme */
 :root {
-  --primary-color: #3498db;
+  --primary-color: darkblue;
   --secondary-color: #2ecc71;
   --text-color: #333;
 }
@@ -119,6 +119,11 @@ figure {
   
 }
 
+figure img {
+  width: 250px;
+  height: auto;
+}
+
 img {
   max-width: 100%;
   /* height: auto; */
@@ -132,7 +137,7 @@ figcaption {
 
 /* Footer styles */
 footer {
-  background-color: #3498db;
+  background-color: darkblue;
   color: #fff;
   padding: 10px 20px;
   text-align: right;
@@ -193,11 +198,13 @@ h1,h2,p {
 }
 
 .contact-form {
-  background-color: #fff;
+  background-color: #eee;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
+  width: 650px;
+  margin: 0 auto;
 }
 
 .contact-form h2 {
@@ -205,7 +212,7 @@ h1,h2,p {
 }
 .contact-form form {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  /*grid-template-columns: 1fr 1fr;*/
   grid-gap: 20px;
 }
 .contact-form label {
@@ -221,12 +228,13 @@ h1,h2,p {
   box-sizing: border-box;
 }
 .contact-form button {
-  background-color: steelblue ;
+  background-color: darkblue ;
   color: white;
   padding: 10px 20px;
   border: none;
   cursor: pointer;
   border-radius: 4px;
+  width: 100%;
 }
 
 .contact-form button:hover {
@@ -236,3 +244,6 @@ h1,h2,p {
   display: flex;
 }
 
+.employee-profile {
+  display: flex;
+}
