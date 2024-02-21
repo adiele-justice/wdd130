@@ -4,37 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trips - Blue Sea Rafting</title>
+    <meta name="description" content="all information you need about our trips and many more">
+    <meta name="author" content="Adiele Justice Iheanyi">
     <link rel="stylesheet" href="./styles/rafting.css">
-    <style>
 
-/*Main Styles Content*/
-main {
-    padding: 20px;
-}
-/*Call to action styles section*/
-.call-to-action {
-    text-align: center;
-    margin-top: 40px;
-}
-.call-to-action h3 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-}
-.call-to-action p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
-.call-to-action .cta-btn:hover {
-    background-color: darkblue;
-}
-.call-to-action .cta-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    
-}
-    </style>
 </head>
 <body>
+    <header>
+        <img src="images/logo.png" alt="Rafting Company Logo">
+        <nav>
+            <a href="site-plan-rafting.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <!--Call to action for contacting the company-->
+        <section class="call-to-action">
+            <h3>Ready for an Adventure?</h3>
+            <p>Check out our fun and exciting trips, book with us today and enjoy the beauty of nature.</p>
+            <p>For more inquiries, contact us today!</p>
+            <a href="contact.html" class="cta-btn">Contact Us</a>
+        </section>
+
+        <!--our trip descriptions and photos-->
+        <section class="trip-description">
+            <h2>Magpie River, Canada</h2>
+            <img src="images/rafting1.jpg" alt="Canada Water Rafting">
+            <p>Be part of a 3-day amazing adventure around the landscapes of Canada, explore beautiful water-falls.</p>
+        </section>
+
+        <section class="trip-description">
+            <h2>Tara River, Bosnia</h2>
+            <img src="images/rafting2.jpg" alt="Bosnia Water Rafting">
+            <p>Embark on a thrilling 5-day water rafting adventure down Tara River, one of our most enjoyed rafting locations.</p>
+        </section>
+
+        <section class="trip-description">
+            <h2>Salmon River's Middle Fork, Idaho</h2>
+            <img src="images/rafting3.jpg" alt="Middle fork water rafting">
+            <p>Learn and discover more exciting wonders about the salmon river's in middle fork, Idaho on this 7-day expedition.</p>
+        </section>
+
+        <section class="trip-description">
+          <h2>Futaleufu River, Chile</h2>
+          <img src="images/rafting4.jpg" alt="Chile water rafting">
+          <p>Join us as we take this 11-day fun adventure to explore the Futaleufu river, in Chile. </p>
+        </section>
+
+        <!--Table for all available trips-->
+<section class="trip-table">
+    <h2>Available Trips</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Trip Name</th>
+                <th>Duration</th>
+                <th>Difficulty</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Magpie River, Canada Rafting</td>
+                <td>3 days</td>
+                <td>Intermediate</td>
+                <td>$650</td>
+            </tr>
+            <tr>
+                <td>Tara River, Bosnia</td>
+                <td>5 days</td>
+                <td>Advanced</td>
+                <td>$750</td>
+            </tr>
+            <tr>
+                <td>Salmon River's Middle Fork, Idaho</td>
+                <td>7 days</td>
+                <td>Expert</td>
+                <td>$900</td>
+            </tr>
+            <tr>
+                <td>Futaleufu River, Chile</td>
+                <td>11 days</td>
+                <td>Extreme</td>
+                <td>$1500</td>
+            </tr>
+            <!--for other rows-->
+        </tbody>
+    </table>
+</section>
+    </main>
+    <footer>
+    <p>&copy; 2024 ✨BLUE SEA RAFTING ✨ Adiele Justice Iheanyi✨</p>
+    <nav class="sociallinks">
+      <a href="https://facebook.com">
+        <img src="./images/facebook.png" alt="Facebook">
+      </a>
+      <a href="https://twitter.com">
+        <img src="./images/twitter.png" alt="Twitter">
+      </a>
+      <a href="https://instagram.com">
+        <img src="./images/instagram.png" alt="Instagram">
+      </a>
+    </nav>
+    <p id="center"><a href="https://byui-cse.github.io/wdd130-ww-course/images/wwr/wwr-wireframe-home.png" alt="Home Page Wireframe Example Design" width="700">Home Page Wireframe</a></p>
+    </footer>
     
 </body>
 </html>
